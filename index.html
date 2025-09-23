@@ -15,14 +15,14 @@
         <div class="relative z-10 h-full flex flex-col justify-between pb-6">
         <!-- navbar -->
         <nav aria-label="Main navigation"
-          class="w-full max-w-[1312px] h-20 bg-white/70 backdrop-blur-md rounded-[20px] flex items-center justify-between px-6 py-3 shadow-sm">
+          class="w-full max-w-[1312px] h-18 bg-white/70 backdrop-blur-md rounded-[20px] flex items-center justify-between px-6">
           <span aria-label="Rendezvous home"
             class="text-[#432361] font-[500] tracking-tight text-[clamp(1rem,2.2vw,1.5rem)] md:text-[clamp(1.125rem,2.4vw,2rem)] leading-[1] whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-[#783EAD] px-1">
             rendezvous
           </span>
   
           <!-- Desktop links -->
-          <ul class="hidden md:flex items-center gap-6 text-[#432361] text-sm" aria-label="Primary menu">
+          <ul class="hidden md:flex items-center gap-6 text-[#432361] font-medium text-sm">
             <li><a href="./page-two.html" class=" hover:outline-none hover:ring-2 hover:ring-[#783EAD] px-2 py-1 rounded">Discover</a></li>
             <li><a href="./page-two.html" class="hover:outline-none hover:ring-2 hover:ring-[#783EAD] px-2 py-1 rounded">About</a></li>
             <li><a href="./page-two.html" class="hover:outline-none hover:ring-2 hover:ring-[#783EAD] px-2 py-1 rounded">FAQs</a></li>
@@ -30,7 +30,7 @@
           </ul>
   
           <!-- Actions (desktop) -->
-          <div class="hidden md:flex items-center gap-3">
+          <div class="hidden md:flex items-center gap-3 font-medium">
             <button type="button" class="px-4 py-2 text-sm text-gray-700 hover:text-[#783EAD] focus:outline-none focus:ring-2 focus:ring-[#783EAD] rounded">
               Log In
             </button>
@@ -57,7 +57,7 @@
                 Ready to Rock? Discover the Hottest Events Here – Your Calendar's New Best Friend!
               </p>
     
-              <div class="border flex flex-col sm:flex-row justify-center items-center gap-4 w-full md:w-auto bg-white p-4 rounded-[20px]">
+              <div class="flex flex-col sm:flex-row justify-center items-center gap-4 w-full md:w-auto bg-white p-4 rounded-[20px]">
                 <!-- search input -->
                 <div class="flex items-center gap-3 border-r-2 border-solid pr-3">
                   <svg class="w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -122,13 +122,18 @@
       <!--  -->
       <div class="flex items-center justify-between w-full max-w-7xl mx-auto">
         <h2 class="text-3xl font-semibold text-[#432361]">Trending events</h2>
-        <a href="#" class="text-sm text-[#783EAD] hover:underline">View all trending events</a>
+        <a href="#" class="flex items-center px-0.5 gap-2 text-[#783EAD] font-medium text-sm hover:outline-none hover:ring-2 hover:ring-[#783EAD]">
+          View all trending events
+          <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 17L17 7M7 7h10v10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
       </div>
 
       <!-- Events -->
-      <section class="max-w-7xl mx-auto mb-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section id="events-container" class="max-w-7xl mx-auto mb-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- event 1 -->
-        <article class="flex flex-col rounded-lg border border-gray-200 overflow-hidden bg-white">
+        <!-- <article class="flex flex-col rounded-lg border border-gray-200 overflow-hidden bg-white">
           <img src="./images/event-one.png" alt="ISWIS Live show" class="w-full h-[240px] object-cover">
           <div class="p-6 flex flex-col flex-grow">
             <div class="mb-3">
@@ -148,19 +153,19 @@
               </a>
             </div>
           </div>
-        </article>
+        </article> -->
 
         <!-- event 2 -->
-        <article class="flex flex-col rounded-lg border border-gray-200 overflow-hidden bg-white">
+        <!-- <article class="flex flex-col rounded-lg border border-gray-200 overflow-hidden bg-white">
           <img src="./images/event-two.jpg" alt="Tech Summit 2025" class="w-full h-[240px] object-cover">
           <div class="p-6 flex flex-col flex-grow">
             <div class="mb-3">
-              <h3 class="text-[#432361] font-semibold text-[16px] leading-none">Tech Summit 2025</h3>
-              <time class="text-gray-500 text-sm mt-1 block" datetime="2025-11-12">Fri, Nov 12th - 9am</time>
+              <h3 class="text-[#432361] font-semibold text-[16px] leading-none">ISWIS Live show</h3>
+              <time class="text-gray-500 text-sm mt-1 block" datetime="2025-11-12">Sun, Oct 3rd - 6pm</time>
             </div>
             <p class="text-gray-600 text-sm leading-relaxed mb-6">
-              Join industry leaders in exploring the future of technology. Networking, talks,
-              and interactive sessions await you at this summit.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ab voluptas,
+              illum culpa laboriosam dolorum consequatur corporis deleniti omnis eum.
             </p>
             <div class="mt-auto">
               <a class="inline-flex items-center gap-2 text-[#783EAD] font-medium text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-[#783EAD]" href="#" role="button">
@@ -171,19 +176,19 @@
               </a>
             </div>
           </div>
-        </article>
+        </article> -->
 
         <!-- event 3 -->
-        <article class="flex flex-col rounded-lg border border-gray-200 overflow-hidden bg-white">
+        <!-- <article class="flex flex-col rounded-lg border border-gray-200 overflow-hidden bg-white">
           <img src="./images/event-three_screenshot.png" alt="Music Night Festival" class="w-full h-[240px] object-cover">
           <div class="p-6 flex flex-col flex-grow">
             <div class="mb-3">
-              <h3 class="text-[#432361] font-semibold text-[16px] leading-none">Music Night Festival</h3>
-              <time class="text-gray-500 text-sm mt-1 block" datetime="2025-12-04">Sat, Dec 4th - 8pm</time>
+              <h3 class="text-[#432361] font-semibold text-[16px] leading-none">ISWIS Live show</h3>
+              <time class="text-gray-500 text-sm mt-1 block" datetime="2025-12-04">Sun, Oct 3rd - 6pm</time>
             </div>
             <p class="text-gray-600 text-sm leading-relaxed mb-6">
-              Experience a night of live music performances with local and international
-              artists. A must-attend event for music lovers.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ab voluptas,
+              illum culpa laboriosam dolorum consequatur corporis deleniti omnis eum.
             </p>
             <div class="mt-auto">
               <a class="inline-flex items-center gap-2 text-[#783EAD] font-medium text-sm hover:underline focus:outline-none focus:ring-2 focus:ring-[#783EAD]" href="#" role="button">
@@ -194,7 +199,7 @@
               </a>
             </div>
           </div>
-        </article>
+        </article> -->
       </section>
 
       <!-- Events categories -->
@@ -204,19 +209,22 @@
           <button class="bg-[#783EAD] text-white rounded-[0.625rem] px-6 py-2 hover:bg-[#622f8c] transition-colors w-max">View all events</button>
         </div>
         <!--  -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div id="event-container" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <!-- event card 1 -->
           <div class="flex justify-center">
             <div class="relative w-[440px] max-w-full h-[218px] rounded-lg overflow-hidden bg-cover bg-center" style="background-image: url('./images/event-online.jpg')">
               <span class="absolute inset-0 flex items-center justify-center text-white font-semibold text-lg bg-black/40">Online Events</span>
             </div>
           </div>
 
+          <!-- event card 2 -->
           <div class="flex justify-center">
             <div class="relative w-[440px] max-w-full h-[218px] rounded-lg overflow-hidden bg-cover bg-center" style="background-image: url('./images/event-physical.jpg')">
               <span class="absolute inset-0 flex items-center justify-center text-white font-semibold text-lg bg-black/40">Physical Events</span>
             </div>
           </div>
 
+          <!-- event card 3 -->
           <div class="flex justify-center sm:col-span-2">
             <div class="relative w-[440px] max-w-full h-[218px] rounded-lg overflow-hidden bg-cover bg-center" style="background-image: url('./images/event-hybrid.jpg')">
               <span class="absolute inset-0 flex items-center justify-center text-white font-semibold text-lg bg-black/40">Hybrid Events</span>
